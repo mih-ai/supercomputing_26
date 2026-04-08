@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH --account=project_2018026
 #SBATCH --job-name=moi_job
 #SBATCH --output=moi_output_%j.txt
 #SBATCH --error=moi_error_%j.txt
@@ -6,7 +7,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1G
-#SBATCH --partition=cputest
+#SBATCH --partition=test
 
 module load python-data
 
